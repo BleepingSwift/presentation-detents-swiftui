@@ -1,0 +1,27 @@
+name: PresentationDetentsSWIFTUI
+options:
+  bundleIdPrefix: com.bleepingswift
+  deploymentTarget:
+    iOS: "26.0"
+    macOS: "26.0"
+    watchOS: "26.0"
+    tvOS: "26.0"
+    visionOS: "26.0"
+  xcodeVersion: "27.1"
+  generateEmptyDirectories: true
+settings:
+  SWIFT_VERSION: "6.0"
+  SWIFT_STRICT_CONCURRENCY: complete
+targets:
+  PresentationDetentsSWIFTUI:
+    type: application
+    platform: iOS
+    sources:
+      - path: PresentationDetentsSWIFTUI/Sources
+        excludes:
+          - "**/.DS_Store"
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: com.bleepingswift.presentationdetentsswiftui
+      GENERATE_INFOPLIST_FILE: true
+      INFOPLIST_KEY_UIApplicationSceneManifest_Generation: true
+      INFOPLIST_KEY_UILaunchScreen_Generation: true
